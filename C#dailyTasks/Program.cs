@@ -12,6 +12,7 @@ namespace C_dailyTasks
         {
 
             Console.WriteLine("hello World!");
+            Console.WriteLine("thank you khalid");
         }
     }
 }
