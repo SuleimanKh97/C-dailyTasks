@@ -92,7 +92,7 @@ namespace ConsoleApp2
             //divisibility();
 
             //12
-            middleValue();
+            //middleValue();
 
 
 
