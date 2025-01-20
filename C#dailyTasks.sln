@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35707.178 d17.12
+VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C#dailyTasks", "C#dailyTasks\C#dailyTasks.csproj", "{0821C02D-ADCC-4DA7-9E5C-EFD35857D3A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "day3-20-01-25", "day3-20-01-25\day3-20-01-25.csproj", "{254896EC-41B7-4749-A82B-DCCD82FCE9CB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{0821C02D-ADCC-4DA7-9E5C-EFD35857D3A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0821C02D-ADCC-4DA7-9E5C-EFD35857D3A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0821C02D-ADCC-4DA7-9E5C-EFD35857D3A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{254896EC-41B7-4749-A82B-DCCD82FCE9CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{254896EC-41B7-4749-A82B-DCCD82FCE9CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{254896EC-41B7-4749-A82B-DCCD82FCE9CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{254896EC-41B7-4749-A82B-DCCD82FCE9CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
