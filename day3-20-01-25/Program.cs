@@ -20,20 +20,20 @@ namespace day3_20_01_25
         static void Main(string[] args)
         {
 
-            roomsinhotel room1 = new roomsinhotel();
-            Console.WriteLine("Enter Room Number: ");
-            room1.roomnumber = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter Room Type:  (e.g., Single, Double, Suite)");
-            room1.roomtype = Console.ReadLine();
+            //roomsinhotel room1 = new roomsinhotel();
+            //Console.WriteLine("Enter Room Number: ");
+            //room1.roomnumber = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Enter Room Type:  (e.g., Single, Double, Suite)");
+            //room1.roomtype = Console.ReadLine();
 
-            room1.roomstatus = "Available";
-            room1.roomprice = 89.99;
+            //room1.roomstatus = "Available";
+            //room1.roomprice = 89.99;
 
-            Console.WriteLine("Welcome To: " + roomsinhotel.hotelname);
-            Console.WriteLine("Room Number: " + room1.roomnumber);
-            Console.WriteLine("Room type: " + room1.roomtype);
-            Console.WriteLine("Room status: " + room1.roomstatus);
-            Console.WriteLine("Room price: $" + room1.roomprice);
+            //Console.WriteLine("Welcome To: " + roomsinhotel.hotelname);
+            //Console.WriteLine("Room Number: " + room1.roomnumber);
+            //Console.WriteLine("Room type: " + room1.roomtype);
+            //Console.WriteLine("Room status: " + room1.roomstatus);
+            //Console.WriteLine("Room price: $" + room1.roomprice);
 
 
             //CountVowels();
@@ -64,7 +64,7 @@ namespace day3_20_01_25
 
 
             //4 not completed
-            //prime(10,30);
+            //prime();
 
 
             //5 largest
@@ -186,16 +186,44 @@ namespace day3_20_01_25
             return multi;
         }
 
-        static void prime(int a, int b)
+        //static void prime(int a, int b)
+        //{
+        //    for (int i = a; i <= b; i++)
+        //    {
+        //        for (int j = 2; j < i; j++)
+        //        {
+        //            if (j % i == 0)
+        //            {
+        //                Console.WriteLine("Not Prime");
+        //                break;
+        //            }
+        //            else
+        //            {
+
+        //                Console.WriteLine("prime" + j);
+        //                break;
+
+        //            }
+        //        }
+        //    }
+        //}
+
+        public static void prime()
         {
-            for (int i = a; i <= b; i++)
+            int x = 18;
+            for (int i = 2; i < x; i++)
             {
-                for (int j = 1; j <= i; j++)
+                if (x % i == 0)
                 {
-                    if ((i % j == 0) && (i / j == 1))
-                    {
-                        Console.WriteLine(j);
-                    }
+                    Console.WriteLine("Not Prime");
+                    break;
+                }
+                else
+                {
+
+                    Console.WriteLine("prime");
+                    break;
+
                 }
             }
         }
