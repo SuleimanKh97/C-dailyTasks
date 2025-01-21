@@ -80,7 +80,7 @@ namespace day3_21_01_25
 
         //5- Property: A class member that provides a flexible way to access and modify fields, often with get and set methods.
 
-        //6- Field: A variable defined within a class to store data.
+        //6- Field: A variable defined within a class to store data and it is privet.
 
         //7- Constructor: A special method used to initialize objects of a class.
 
