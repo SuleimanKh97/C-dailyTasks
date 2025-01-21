@@ -24,7 +24,7 @@ namespace day3_21_01_25
             age = 0;
             studentId = 0;
         }
-        public Student(string studentName, double age, int studentId)  //Constructor
+        public Student(string studentName, double age, int studentId)  //Constructor with parameters
         {
             this.studentName = studentName;
             this.age = age;
