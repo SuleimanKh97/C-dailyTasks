@@ -29,6 +29,14 @@ namespace day3_21_01_25
             this.age = age;
             this.studentId = studentId;
         }
+        public void getDetails() // method for print to console student data
+        {
+            Console.WriteLine("Student Name: " + studentName);
+            Console.WriteLine("Student Age: " + age);
+            Console.WriteLine("Student ID: " + studentId);
+            Console.WriteLine("******************************************************");
+        }
+
         ~Student()  //Destructor
         {
             Console.WriteLine("Object is destroyed");
@@ -44,16 +52,16 @@ namespace day3_21_01_25
             student1.studentName = "ahmad";
             student1.age = 22;
             student1.studentId = 1001;
-            getDetails(student1);
+            student1.getDetails();
 
 
 
 
             Student student2 = new Student("ali", 24, 1002); //object the data is passed as parameters
-            getDetails(student2);
+            student2.getDetails();
 
             Student student3 = new Student("sara", 21, 1003); //object the data is passed as parameters
-            getDetails(student3);
+            student3.getDetails();
 
 
 
