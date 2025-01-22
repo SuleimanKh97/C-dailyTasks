@@ -45,7 +45,7 @@ namespace day3_20_01_25
             //Console.WriteLine(isevenorodd(a));
 
             //2
-            //int[] arr = {1,2,3,4,5};
+            //int[] arr = { 1, 2, 3, 4, 5 };
             //Console.WriteLine("Enter 5 numbers: ");
             //for (int i = 0; i < 5; i++)
             //{
@@ -64,7 +64,7 @@ namespace day3_20_01_25
 
 
             //4 not completed
-            //prime();
+            //prime(10 , 20);
 
 
             //5 largest
@@ -72,7 +72,7 @@ namespace day3_20_01_25
             //Console.WriteLine("Enter size of array: ");
             //int a = Convert.ToInt32(Console.ReadLine());
 
-            //int[] arr ;
+            //int[] arr;
             //arr = new int[a];
             //Console.WriteLine("Enter the Numbers: ");
             //for (int i = 0; i < arr.Length; i++)
@@ -159,7 +159,7 @@ namespace day3_20_01_25
         static int thesecondsmallest(int[] arr)
         {
             int smallest = arr[0];
-            int secondsmallest = arr[0];
+            int secondsmallest = arr[1];
             for (int i = 0; i < arr.Length; i++)
             {
                 if (arr[i] < smallest)
@@ -167,7 +167,7 @@ namespace day3_20_01_25
                     secondsmallest = smallest;
                     smallest = arr[i];
                 }
-                else if (arr[i] < secondsmallest)
+                else if (arr[i] < secondsmallest && arr[i] > smallest)
                 {
                     secondsmallest = arr[i];
                 }
@@ -186,47 +186,47 @@ namespace day3_20_01_25
             return multi;
         }
 
-        //static void prime(int a, int b)
-        //{
-        //    for (int i = a; i <= b; i++)
-        //    {
-        //        for (int j = 2; j < i; j++)
-        //        {
-        //            if (j % i == 0)
-        //            {
-        //                Console.WriteLine("Not Prime");
-        //                break;
-        //            }
-        //            else
-        //            {
-
-        //                Console.WriteLine("prime" + j);
-        //                break;
-
-        //            }
-        //        }
-        //    }
-        //}
-
-        public static void prime()
+        static void prime(int a, int b)
         {
-            int x = 18;
-            for (int i = 2; i < x; i++)
+            for (int i = a; i <= b; i++)
             {
-                if (x % i == 0)
+                for (int j = 2; j < i; j++)
                 {
-                    Console.WriteLine("Not Prime");
-                    break;
-                }
-                else
-                {
+                    if (j % i == 0)
+                    {
+                        Console.WriteLine("Not Prime");
+                        break;
+                    }
+                    else
+                    {
 
-                    Console.WriteLine("prime");
-                    break;
+                        Console.WriteLine("prime" + j);
+                        break;
 
+                    }
                 }
             }
         }
+
+        //public static void prime(int a)
+        //{
+        //    int x = a;
+        //    for (int i = 2; i < x; i++)
+        //    {
+        //        if (x % i == 0)
+        //        {
+        //            Console.WriteLine("Not Prime");
+        //            break;
+        //        }
+        //        else
+        //        {
+
+        //            Console.WriteLine("prime");
+        //            break;
+
+        //        }
+        //    }
+        //}
 
 
         static void largest(int[] arr)
