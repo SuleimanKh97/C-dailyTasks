@@ -97,6 +97,16 @@ namespace day6_23_01_25
         }
         static void Main(string[] args)
             {
+            Piano p = new Piano();
+            p.play();
+
+            Guitar g = new Guitar();
+            g.play();
+
+            dog d = new dog();
+            d.makeSound();
+            d.sleep();
+
             }
         }
     }
